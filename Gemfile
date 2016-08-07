@@ -6,7 +6,3 @@ gem 'dashing'
 gem 'twitter', '>= 5.9.0'
 
 gem 'simple-rss'
-
-gem 'activesupport', '= 4.2.4'
-
-gem 'jira-ruby'
