@@ -4,7 +4,7 @@ require 'json'
 
 server = "http://api.forismatic.com"
 
-SCHEDULER.every '4h', :first_in => 0 do |job|
+SCHEDULER.every '10s', :first_in => 0 do |job|
 
 	url = URI.parse("#{server}/api/1.0/?method=getQuote&key=&format=json&lang=en")
 	req = Net::HTTP::Get.new(url.to_s)
