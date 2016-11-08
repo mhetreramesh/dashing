@@ -11,7 +11,7 @@ SCHEDULER.every '10s', :first_in => 0 do |job|
 	res = Net::HTTP.start(url.host, url.port) {|http|
 		http.request(req)
 	}
-
+  
 	# Convert to JSON
 	data = JSON[res.body]
 
