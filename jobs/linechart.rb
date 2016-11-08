@@ -2,7 +2,7 @@ require 'net/http'
 require 'uri'
 require 'json'
 
-server = "http://demo.vegfru.com"
+server = "http://vegfru.com"
 
 SCHEDULER.every '10s', :first_in => 0 do |job|
 
